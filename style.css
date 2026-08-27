@@ -37,6 +37,11 @@ a {
   --f-display: "Instrument Serif", Georgia, serif;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 /* ---------------- Header ---------------- */
 
 html {
@@ -152,7 +157,7 @@ body.ns-cart-open {
 }
 
 /* Header component */
-#header-component {
+#ns-header-component {
   display: block;
   background: #ffffff;
   border-bottom: 1px solid rgba(43, 46, 63, 0.08);
@@ -939,7 +944,7 @@ body.ns-cart-open {
 
 /* ---------------- Hero ---------------- */
 
-.nshero {
+.ns-hero {
   --ink: #1f2438;
   --ink-soft: #3a4055;
   --lavender: #aaa8ff;
@@ -953,12 +958,12 @@ body.ns-cart-open {
   margin-left: calc(50% - 50vw);
   position: relative;
 }
-.nshero img,
-.nshero video {
+.ns-hero img,
+.ns-hero video {
   display: block;
   max-width: 100%;
 }
-.nshero-hero {
+.ns-hero-main {
   position: relative;
   height: 100vh;
   min-height: 640px;
@@ -966,19 +971,19 @@ body.ns-cart-open {
   overflow: hidden;
   background: #000;
 }
-.nshero-video {
+.ns-hero-video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
-.nshero-video video {
+.ns-hero-video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.nshero-overlay {
+.ns-hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -992,7 +997,7 @@ body.ns-cart-open {
   pointer-events: none;
   z-index: 1;
 }
-.nshero-content {
+.ns-hero-content {
   position: absolute;
   bottom: calc(25vh - 30px);
   left: 0;
@@ -1002,16 +1007,16 @@ body.ns-cart-open {
   max-width: 1400px;
   margin: 0 auto;
 }
-.nshero-row {
+.ns-hero-row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
 }
-.nshero-copy {
+.ns-hero-copy {
   max-width: 1100px;
 }
-.nshero-eye {
+.ns-hero-eye {
   font-size: 13px;
   font-weight: 600;
   color: #fff;
@@ -1020,7 +1025,7 @@ body.ns-cart-open {
   opacity: 0.9;
   text-transform: uppercase;
 }
-.nshero-h1 {
+.ns-hero-h1 {
   font-family: var(--f-display);
   font-weight: 400;
   letter-spacing: -0.025em;
@@ -1029,7 +1034,7 @@ body.ns-cart-open {
   font-size: clamp(52px, 6vw, 84px);
   white-space: nowrap;
 }
-.nshero-h1 .nshero-sub {
+.ns-hero-h1 .ns-hero-sub {
   display: block;
   color: var(--lavender);
   font-family: var(--f-body);
@@ -1041,7 +1046,7 @@ body.ns-cart-open {
   max-width: 860px;
   white-space: normal;
 }
-.nshero-buy {
+.ns-hero-buy {
   display: inline-flex;
   align-items: center;
   gap: 14px;
@@ -1050,33 +1055,33 @@ body.ns-cart-open {
   padding: 10px 10px 10px 30px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
 }
-.nshero-buy-label-name {
+.ns-hero-buy-label-name {
   font-size: 17px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.005em;
   opacity: 0.7;
 }
-.nshero-buy-dot {
+.ns-hero-buy-dot {
   font-size: 17px;
   color: var(--ink);
   opacity: 0.35;
   font-weight: 400;
 }
-.nshero-buy-price {
+.ns-hero-buy-price {
   font-size: 20px;
   font-weight: 600;
   color: var(--ink);
   letter-spacing: -0.01em;
 }
-.nshero-buy-price s {
+.ns-hero-buy-price s {
   font-size: 0.7em;
   font-weight: 400;
   opacity: 0.45;
   margin-left: 6px;
   text-decoration: line-through;
 }
-.nshero-buy-btn {
+.ns-hero-buy-btn {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
@@ -1099,45 +1104,45 @@ body.ns-cart-open {
   margin: 0;
   letter-spacing: 0.01em;
 }
-.nshero-buy-btn:hover {
+.ns-hero-buy-btn:hover {
   background: #3a4055 !important;
   color: #fff !important;
 }
-.nshero-buy-btn .nshero-buy-label {
+.ns-hero-buy-btn .ns-hero-buy-label {
   color: #fff !important;
   display: inline-block;
 }
 
-.nshero-section {
+.ns-hero-section {
   position: relative;
   padding: 120px 0;
   background: #fafaf7;
   color: #1f2438;
   overflow: hidden;
 }
-.nshero-section-alt {
+.ns-hero-section-alt {
   background: #ffffff;
 }
-.nshero-c {
+.ns-hero-c {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 48px;
 }
-.nshero-c-narrow {
+.ns-hero-c-narrow {
   max-width: 880px;
   margin: 0 auto;
   padding: 0 48px;
 }
 
-.nshero-usecase {
+.ns-hero-usecase {
   padding: 120px 0;
   background: #fafaf7;
   color: #1f2438;
 }
-.nshero-usecase-alt {
+.ns-hero-usecase-alt {
   background: #ffffff;
 }
-.nshero-usecase-grid {
+.ns-hero-usecase-grid {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 48px;
@@ -1146,29 +1151,29 @@ body.ns-cart-open {
   gap: 80px;
   align-items: center;
 }
-.nshero-usecase-grid.reverse .nshero-usecase-visual {
+.ns-hero-usecase-grid.reverse .ns-hero-usecase-visual {
   order: 2;
 }
-.nshero-usecase-grid.reverse .nshero-usecase-copy {
+.ns-hero-usecase-grid.reverse .ns-hero-usecase-copy {
   order: 1;
 }
-.nshero-usecase-visual {
+.ns-hero-usecase-visual {
   aspect-ratio: 4/5;
   border-radius: 20px;
   overflow: hidden;
   background: #171c2f;
   box-shadow: 0 20px 60px rgba(31, 36, 56, 0.1);
 }
-.nshero-usecase-visual img {
+.ns-hero-usecase-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.nshero-usecase-copy {
+.ns-hero-usecase-copy {
   max-width: 520px;
 }
-.nshero-tag {
+.ns-hero-tag {
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
@@ -1181,7 +1186,7 @@ body.ns-cart-open {
   border: 1px solid rgba(170, 168, 255, 0.4);
   border-radius: 100px;
 }
-.nshero-usecase-h2 {
+.ns-hero-usecase-h2 {
   font-family: var(--f-display);
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -1190,14 +1195,14 @@ body.ns-cart-open {
   font-size: clamp(44px, 5vw, 68px);
   margin-bottom: 24px;
 }
-.nshero-usecase-lead {
+.ns-hero-usecase-lead {
   font-size: 19px;
   line-height: 1.6;
   color: #1f2438;
   font-weight: 400;
   margin-bottom: 36px;
 }
-.nshero-usecase-btn {
+.ns-hero-usecase-btn {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
@@ -1220,26 +1225,26 @@ body.ns-cart-open {
   box-shadow: none;
   margin: 0;
 }
-.nshero-usecase-btn:hover {
+.ns-hero-usecase-btn:hover {
   background: #3a4055 !important;
   color: #fff !important;
 }
-.nshero-usecase-btn:hover .nshero-arr {
+.ns-hero-usecase-btn:hover .ns-hero-arr {
   transform: translateX(4px);
 }
-.nshero-arr {
+.ns-hero-arr {
   transition: transform 0.2s ease;
   display: inline-block;
   color: #fff;
 }
 
-.nshero-science {
+.ns-hero-science {
   padding: 140px 0;
   background: #ffffff;
   color: #1f2438;
   text-align: center;
 }
-.nshero-science-eye {
+.ns-hero-science-eye {
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
@@ -1252,7 +1257,7 @@ body.ns-cart-open {
   border: 1px solid rgba(170, 168, 255, 0.4);
   border-radius: 100px;
 }
-.nshero-science h2 {
+.ns-hero-science h2 {
   font-family: var(--f-display);
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -1262,14 +1267,14 @@ body.ns-cart-open {
   margin: 0 auto 24px;
   max-width: 780px;
 }
-.nshero-science-lead {
+.ns-hero-science-lead {
   font-size: 19px;
   line-height: 1.7;
   color: #1f2438;
   max-width: 680px;
   margin: 0 auto 56px;
 }
-.nshero-specs {
+.ns-hero-specs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
@@ -1278,15 +1283,15 @@ body.ns-cart-open {
   border-top: 1px solid rgba(31, 36, 56, 0.12);
   border-bottom: 1px solid rgba(31, 36, 56, 0.12);
 }
-.nshero-spec {
+.ns-hero-spec {
   padding: 36px 24px;
   text-align: center;
   border-right: 1px solid rgba(31, 36, 56, 0.12);
 }
-.nshero-spec:last-child {
+.ns-hero-spec:last-child {
   border-right: none;
 }
-.nshero-spec-v {
+.ns-hero-spec-v {
   font-family: var(--f-display);
   font-size: clamp(32px, 3.8vw, 48px);
   font-weight: 400;
@@ -1295,7 +1300,7 @@ body.ns-cart-open {
   letter-spacing: -0.02em;
   margin-bottom: 10px;
 }
-.nshero-spec-l {
+.ns-hero-spec-l {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1303,154 +1308,154 @@ body.ns-cart-open {
   color: #1f2438;
   opacity: 0.7;
 }
-.nshero-science-cta {
+.ns-hero-science-cta {
   margin-top: 64px;
 }
 
 @media (max-width: 900px) {
-  .nshero-hero {
+  .ns-hero-main {
     min-height: 505px;
     height: calc(80svh + 25px);
   }
-  .nshero-content {
+  .ns-hero-content {
     padding: 0 22px;
     bottom: calc(8vh + 20px);
     top: auto;
   }
-  .nshero-row {
+  .ns-hero-row {
     gap: 18px;
   }
-  .nshero-eye {
+  .ns-hero-eye {
     font-size: 11px;
     margin-bottom: 8px;
     letter-spacing: 0.06em;
   }
-  .nshero-h1 {
+  .ns-hero-h1 {
     font-size: clamp(34px, 8.2vw, 46px);
     white-space: normal;
   }
-  .nshero-h1 .nshero-sub {
+  .ns-hero-h1 .ns-hero-sub {
     font-size: clamp(15px, 3.8vw, 18px);
     margin-top: 14px;
     font-weight: 400;
     line-height: 1.35;
     letter-spacing: -0.005em;
   }
-  .nshero-buy {
+  .ns-hero-buy {
     align-self: stretch;
     justify-content: space-between;
     gap: 10px;
     padding: 10px 10px 10px 24px;
   }
-  .nshero-buy-label-name {
+  .ns-hero-buy-label-name {
     display: none;
   }
-  .nshero-buy-dot {
+  .ns-hero-buy-dot {
     display: none;
   }
-  .nshero-buy-price {
+  .ns-hero-buy-price {
     font-size: 18px;
   }
-  .nshero-buy-btn {
+  .ns-hero-buy-btn {
     padding: 14px 28px !important;
     font-size: 15px;
   }
-  .nshero-section,
-  .nshero-science {
+  .ns-hero-section,
+  .ns-hero-science {
     padding: 72px 0;
   }
-  .nshero-c,
-  .nshero-c-narrow {
+  .ns-hero-c,
+  .ns-hero-c-narrow {
     padding: 0 22px;
   }
-  .nshero-usecase {
+  .ns-hero-usecase {
     padding: 64px 0;
   }
-  .nshero-usecase-grid {
+  .ns-hero-usecase-grid {
     padding: 0 22px;
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .nshero-usecase-grid.reverse .nshero-usecase-visual {
+  .ns-hero-usecase-grid.reverse .ns-hero-usecase-visual {
     order: 0;
   }
-  .nshero-usecase-grid.reverse .nshero-usecase-copy {
+  .ns-hero-usecase-grid.reverse .ns-hero-usecase-copy {
     order: 1;
   }
-  .nshero-usecase-visual {
+  .ns-hero-usecase-visual {
     aspect-ratio: 4/5;
     border-radius: 14px;
     max-width: 480px;
     margin: 0 auto;
     width: 100%;
   }
-  .nshero-usecase-copy {
+  .ns-hero-usecase-copy {
     max-width: 100%;
     text-align: left;
   }
-  .nshero-tag {
+  .ns-hero-tag {
     font-size: 11px;
     margin-bottom: 16px;
     padding: 5px 12px;
     letter-spacing: 0.14em;
   }
-  .nshero-usecase-h2 {
+  .ns-hero-usecase-h2 {
     font-size: clamp(34px, 8.5vw, 44px);
     margin-bottom: 16px;
   }
-  .nshero-usecase-lead {
+  .ns-hero-usecase-lead {
     font-size: 16px;
     margin-bottom: 24px;
   }
-  .nshero-usecase-btn {
+  .ns-hero-usecase-btn {
     padding: 18px 32px !important;
     font-size: 16px;
   }
-  .nshero-science {
+  .ns-hero-science {
     padding: 80px 0;
   }
-  .nshero-science h2 {
+  .ns-hero-science h2 {
     font-size: clamp(32px, 8vw, 44px);
   }
-  .nshero-science-lead {
+  .ns-hero-science-lead {
     font-size: 16px;
     margin-bottom: 40px;
   }
-  .nshero-specs {
+  .ns-hero-specs {
     grid-template-columns: repeat(2, 1fr);
   }
-  .nshero-spec {
+  .ns-hero-spec {
     padding: 24px 16px;
     border-right: 1px solid rgba(31, 36, 56, 0.12);
     border-bottom: 1px solid rgba(31, 36, 56, 0.12);
   }
-  .nshero-spec:nth-child(2n) {
+  .ns-hero-spec:nth-child(2n) {
     border-right: none;
   }
-  .nshero-spec:nth-last-child(-n + 2) {
+  .ns-hero-spec:nth-last-child(-n + 2) {
     border-bottom: none;
   }
-  .nshero-spec-v {
+  .ns-hero-spec-v {
     font-size: 32px;
   }
-  .nshero-spec-l {
+  .ns-hero-spec-l {
     font-size: 11px;
     letter-spacing: 0.1em;
   }
-  .nshero-science-cta {
+  .ns-hero-science-cta {
     margin-top: 48px;
   }
 }
 
 /* ---------------- Logos marquee ---------------- */
 
-.wrap-logos-marquee {
+.ns-marquee {
   border-top: 1px solid rgba(31, 36, 56, 0.12);
   background: #fafaf7;
   padding: 56px 0 64px;
   overflow: hidden;
 }
-.logos-marquee__headline .eyebrow {
+.ns-marquee-headline .ns-marquee-eyebrow {
   text-align: center;
   font-size: 13px;
   font-weight: 700;
@@ -1459,29 +1464,27 @@ body.ns-cart-open {
   color: rgba(31, 36, 56, 0.6);
   margin-bottom: 32px;
 }
-.logos-marquee {
+.ns-marquee-viewport {
   overflow: hidden;
   position: relative;
 }
-.logos-marquee .track {
+.ns-marquee-viewport .ns-marquee-track {
   display: flex;
   align-items: center;
-  gap: 64px;
-  width: max-content;
-  animation: logos-marquee 30s linear infinite;
 }
-.logos-marquee .single-logo img {
-  height: 34px;
-  width: auto;
-  opacity: 0.5;
-  filter: grayscale(1);
+.ns-marquee-viewport .ns-marquee-logo {
+  flex: 0 0 auto;
+  padding-right: 64px;
 }
+
+
+
 @media (prefers-reduced-motion: reduce) {
-  .logos-marquee .track {
+  .ns-marquee-viewport .ns-marquee-track {
     animation: none;
   }
 }
-@keyframes logos-marquee {
+@keyframes ns-marquee {
   from {
     transform: translateX(0);
   }
@@ -1656,11 +1659,9 @@ body.ns-cart-open {
   gap: 48px 0;
 }
 
-
-.footer__headline{
+.footer__headline {
   color: #7f9ef8;
 }
-
 
 @media (min-width: 768px) {
   .footer .container {
