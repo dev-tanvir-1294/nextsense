@@ -1477,7 +1477,10 @@ body.ns-cart-open {
   padding-right: 64px;
 }
 
-
+.ns-marquee-viewport .ns-marquee-logo img {
+  width: auto;
+  height: 50px;
+}
 
 @media (prefers-reduced-motion: reduce) {
   .ns-marquee-viewport .ns-marquee-track {
