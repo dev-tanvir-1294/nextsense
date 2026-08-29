@@ -24,6 +24,53 @@ video {
   display: block;
   max-width: 100%;
 }
+
+h1 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 84px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 68px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: #1f2438;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-family: "Inter", Georgia, serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #1f2438;
+  margin-bottom: 36px;
+}
+
+h4 {
+  font-family: "Inter", Georgia, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #7f9ef8;
+  margin-bottom: 8px;
+}
+
+p {
+  font-family: "Inter", Georgia, serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #1f2438;
+  margin-bottom: 36px;
+}
+
 a {
   color: inherit;
 }
@@ -79,8 +126,6 @@ body.ns-cart-open {
   z-index: 99991;
 }
 .ns-announcement-inner {
-  max-width: 1400px;
-  margin: 0 auto;
   padding: 11px 36px;
   display: flex;
   align-items: center;
@@ -187,8 +232,7 @@ body.ns-cart-open {
   align-items: center;
   justify-content: flex-start;
   gap: 0;
-  max-width: 1400px;
-  margin: 0 auto;
+
   padding: 16px 32px;
   width: 100%;
   position: relative;
@@ -1004,8 +1048,6 @@ body.ns-cart-open {
   right: 0;
   z-index: 2;
   padding: 0 48px;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 .ns-hero-row {
   display: flex;
@@ -1124,8 +1166,6 @@ body.ns-cart-open {
   background: #ffffff;
 }
 .ns-hero-c {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 0 48px;
 }
 .ns-hero-c-narrow {
@@ -1143,8 +1183,6 @@ body.ns-cart-open {
   background: #ffffff;
 }
 .ns-hero-usecase-grid {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 0 48px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1502,6 +1540,12 @@ body.ns-cart-open {
   display: flex;
   background: linear-gradient(0deg, rgba(127, 158, 248, 0.4) 0%, #fff 100%);
   padding: 96px 0 120px;
+}
+
+.ns-wrap-faqs {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .faqs__headline {
