@@ -6,6 +6,16 @@
   padding: 0;
 }
 
+:root {
+  --ink: #1f2438;
+  --ink-soft: #3a4055;
+  --lavender: #aaa8ff;
+  --cream: #fafaf7;
+  --f-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --f-display: "Instrument Serif", Georgia, serif;
+
+}
+
 body {
   font-family:
     "Inter",
@@ -15,8 +25,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #1f2438;
-  background: #fafaf7;
+  color: var(--ink);
+  background: var(--cream);
 }
 
 img,
@@ -26,7 +36,7 @@ video {
 }
 
 h1 {
-  font-family: "Instrument Serif", Georgia, serif;
+  font-family: var(--f-display);
   font-size: 84px;
   font-weight: 400;
   letter-spacing: -0.025em;
@@ -35,39 +45,39 @@ h1 {
 }
 
 h2 {
-  font-family: "Instrument Serif", Georgia, serif;
+  font-family: var(--f-display);
   font-size: 68px;
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.05;
-  color: #1f2438;
+   color: var(--ink);
   margin-bottom: 24px;
 }
 
 h3 {
-  font-family: "Inter", Georgia, serif;
+  font-family: var(--f-body);
   font-size: 19px;
   font-weight: 400;
   line-height: 1.6em;
-  color: #1f2438;
+  color: var(--ink);
   margin-bottom: 36px;
 }
 
 h4 {
-  font-family: "Inter", Georgia, serif;
+  font-family: var(--f-body);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3em;
-  color: #7f9ef8;
+  color: var(--lavender);
   margin-bottom: 8px;
 }
 
 p {
-  font-family: "Inter", Georgia, serif;
+  font-family: var(--f-body);
   font-size: 19px;
   font-weight: 400;
   line-height: 1.6em;
-  color: #1f2438;
+  color: var(--ink);
   margin-bottom: 36px;
 }
 
@@ -75,14 +85,7 @@ a {
   color: inherit;
 }
 
-:root {
-  --ink: #1f2438;
-  --ink-soft: #3a4055;
-  --lavender: #aaa8ff;
-  --cream: #fafaf7;
-  --f-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --f-display: "Instrument Serif", Georgia, serif;
-}
+
 
 .container {
   max-width: 1400px;
