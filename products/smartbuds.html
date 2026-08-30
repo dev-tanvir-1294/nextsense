@@ -18,19 +18,14 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/smartbuds.css" />
   </head>
 
   <body class="pdp-ns">
-    
     <!-- ================= HEADER ================= -->
-    
-    <header
-      id="ns-header-section"
-      class="header-section"
-    >
+
+    <header id="ns-header-section" class="header-section">
       <!-- Announcement bar -->
       <div class="ns-announcement" id="ns-announcement">
         <div class="ns-announcement-inner">
@@ -57,7 +52,7 @@
         data-skip-node-update
         data-scroll-direction="none"
       >
-        <div class="ns-header-inner">
+        <div class="ns-header-inner container">
           <!-- Mobile hamburger -->
           <button
             class="ns-mob-toggle"
@@ -102,7 +97,9 @@
           <!-- Inline nav -->
           <nav class="ns-nav" role="navigation" aria-label="Main navigation">
             <div class="ns-nav-item">
-              <a href="products/smartbuds.html" class="ns-nav-link">Smartbuds</a>
+              <a href="products/smartbuds.html" class="ns-nav-link"
+                >Smartbuds</a
+              >
             </div>
             <div class="ns-nav-item">
               <a
@@ -203,9 +200,7 @@
           </div>
         </div>
       </header-component>
-
     </header>
-
 
     <!-- Mobile drawer -->
     <div class="ns-mobile-backdrop" id="ns-mobile-backdrop"></div>
@@ -456,17 +451,17 @@
       </div>
     </div>
 
-    <main id="MainContent" role="main">
+    <main id="ns-MainContent" role="main">
       <!-- ================= PRODUCT INFORMATION ================= -->
-      <div class="product-information section nspdp2">
-        <div class="nspdp2__grid">
+      <div class="product-information section ns-pdp2">
+        <div class="ns-pdp2__grid">
           <!-- LEFT: GALLERY -->
-          <div class="nspdp2__media">
-            <div class="nspdp2__stage-wrap">
-              <div class="nspdp2__stage" data-gallery-stage>
+          <div class="ns-pdp2__media">
+            <div class="ns-pdp2__stage-wrap">
+              <div class="ns-pdp2__stage" data-gallery-stage>
                 <button
                   type="button"
-                  class="nspdp2__stage-slide nspdp2__stage-slide--active"
+                  class="ns-pdp2__stage-slide ns-pdp2__stage-slide--active"
                   data-idx="0"
                   data-media-type="image"
                   aria-label="View image 1"
@@ -482,7 +477,7 @@
                 </button>
                 <button
                   type="button"
-                  class="nspdp2__stage-slide"
+                  class="ns-pdp2__stage-slide"
                   data-idx="1"
                   data-media-type="image"
                   aria-label="View image 2"
@@ -498,7 +493,7 @@
                 </button>
                 <button
                   type="button"
-                  class="nspdp2__stage-slide"
+                  class="ns-pdp2__stage-slide"
                   data-idx="2"
                   data-media-type="image"
                   aria-label="View image 3"
@@ -514,7 +509,7 @@
                 </button>
                 <button
                   type="button"
-                  class="nspdp2__stage-slide"
+                  class="ns-pdp2__stage-slide"
                   data-idx="3"
                   data-media-type="image"
                   aria-label="View image 4"
@@ -530,13 +525,13 @@
                 </button>
                 <button
                   type="button"
-                  class="nspdp2__stage-slide nspdp2__stage-slide--video"
+                  class="ns-pdp2__stage-slide ns-pdp2__stage-slide--video"
                   data-idx="4"
                   data-media-type="video"
                   data-video-url="https://cdn.shopify.com/videos/c/o/v/391561b3623f417ba10157fa2ea90553.mp4"
                   aria-label="Play product video"
                 >
-                  <span class="nspdp2__stage-video-play">
+                  <span class="ns-pdp2__stage-video-play">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                       <path d="M8 5v14l11-7z" />
                     </svg>
@@ -545,7 +540,7 @@
 
                 <button
                   type="button"
-                  class="nspdp2__stage-arrow nspdp2__stage-arrow--prev"
+                  class="ns-pdp2__stage-arrow ns-pdp2__stage-arrow--prev"
                   data-stage-prev
                   aria-label="Previous"
                 >
@@ -562,7 +557,7 @@
                 </button>
                 <button
                   type="button"
-                  class="nspdp2__stage-arrow nspdp2__stage-arrow--next"
+                  class="ns-pdp2__stage-arrow ns-pdp2__stage-arrow--next"
                   data-stage-next
                   aria-label="Next"
                 >
@@ -578,8 +573,8 @@
                   </svg>
                 </button>
 
-                <div class="nspdp2__stage-trust">
-                  <div class="nspdp2__stage-trust-item">
+                <div class="ns-pdp2__stage-trust">
+                  <div class="ns-pdp2__stage-trust-item">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -592,8 +587,8 @@
                     </svg>
                     <span>Deepens sleep &middot; Sharpens focus</span>
                   </div>
-                  <div class="nspdp2__stage-trust-divider"></div>
-                  <div class="nspdp2__stage-trust-item">
+                  <div class="ns-pdp2__stage-trust-divider"></div>
+                  <div class="ns-pdp2__stage-trust-item">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -611,10 +606,10 @@
               </div>
             </div>
 
-            <div class="nspdp2__thumbs" data-gallery-thumbs>
+            <div class="ns-pdp2__thumbs" data-gallery-thumbs>
               <button
                 type="button"
-                class="nspdp2__thumb nspdp2__thumb--active"
+                class="ns-pdp2__thumb ns-pdp2__thumb--active"
                 data-idx="0"
                 data-media-type="image"
                 aria-label="Show image 1"
@@ -630,7 +625,7 @@
               </button>
               <button
                 type="button"
-                class="nspdp2__thumb"
+                class="ns-pdp2__thumb"
                 data-idx="1"
                 data-media-type="image"
                 aria-label="Show image 2"
@@ -646,7 +641,7 @@
               </button>
               <button
                 type="button"
-                class="nspdp2__thumb"
+                class="ns-pdp2__thumb"
                 data-idx="2"
                 data-media-type="image"
                 aria-label="Show image 3"
@@ -662,7 +657,7 @@
               </button>
               <button
                 type="button"
-                class="nspdp2__thumb"
+                class="ns-pdp2__thumb"
                 data-idx="3"
                 data-media-type="image"
                 aria-label="Show image 4"
@@ -678,13 +673,13 @@
               </button>
               <button
                 type="button"
-                class="nspdp2__thumb nspdp2__thumb--video"
+                class="ns-pdp2__thumb ns-pdp2__thumb--video"
                 data-idx="4"
                 data-media-type="video"
                 aria-label="Play product video"
               >
                 <img
-                  class="nspdp2__thumb-poster"
+                  class="ns-pdp2__thumb-poster"
                   src="https://cdn.shopify.com/s/files/1/0612/0289/0840/files/Screenshot_2026-04-18_at_3.31.59_PM.png?v=1776544346"
                   alt="Product video"
                   loading="lazy"
@@ -692,7 +687,7 @@
                   width="120"
                   height="120"
                 />
-                <span class="nspdp2__thumb-play">
+                <span class="ns-pdp2__thumb-play">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M8 5v14l11-7z" />
                   </svg>
@@ -702,9 +697,9 @@
           </div>
 
           <!-- RIGHT: DETAILS -->
-          <div class="nspdp2__details">
-            <div class="nspdp2__reviews">
-              <div class="nspdp2__stars">
+          <div class="ns-pdp2__details">
+            <div class="ns-pdp2__reviews">
+              <div class="ns-pdp2__stars">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <polygon
                     points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"
@@ -731,14 +726,14 @@
                   />
                 </svg>
               </div>
-              <span class="nspdp2__reviews-link"
+              <span class="ns-pdp2__reviews-link"
                 ><u>2,847+</u> verified customers</span
               >
             </div>
 
-            <h1 class="nspdp2__title">NextSense Smartbuds</h1>
+            <h1 class="ns-pdp2__title">NextSense Smartbuds</h1>
 
-            <p class="nspdp2__descriptor">
+            <p class="ns-pdp2__descriptor">
               Most wearables just track. Smartbuds
               <strong>work with your brain</strong>. Clinical-grade EEG sensors
               read your brainwaves in real time. At night, gentle sound pulses
@@ -747,108 +742,108 @@
               day and night.
             </p>
 
-            <div class="nspdp2__newfeat">
-              <span class="nspdp2__newfeat-chip">New</span>
-              <span class="nspdp2__newfeat-text"
+            <div class="ns-pdp2__newfeat">
+              <span class="ns-pdp2__newfeat-chip">New</span>
+              <span class="ns-pdp2__newfeat-text"
                 >Focus Mode: open-ended, Pomodoro, or Smart focus sessions with
                 audio that adapts as you work. Included free in the app.</span
               >
             </div>
 
-            <div class="nspdp2__press">
-              <div class="nspdp2__press-label">As featured in</div>
-              <div class="nspdp2__press-logos">
-                <span class="nspdp2__press-logo nspdp2__press-logo--forbes"
+            <div class="ns-pdp2__press">
+              <div class="ns-pdp2__press-label">As featured in</div>
+              <div class="ns-pdp2__press-logos">
+                <span class="ns-pdp2__press-logo ns-pdp2__press-logo--forbes"
                   >Forbes</span
                 >
-                <span class="nspdp2__press-divider"></span>
-                <span class="nspdp2__press-logo nspdp2__press-logo--fastco"
+                <span class="ns-pdp2__press-divider"></span>
+                <span class="ns-pdp2__press-logo ns-pdp2__press-logo--fastco"
                   >Fast Company</span
                 >
-                <span class="nspdp2__press-divider"></span>
-                <span class="nspdp2__press-logo nspdp2__press-logo--futurism"
+                <span class="ns-pdp2__press-divider"></span>
+                <span class="ns-pdp2__press-logo ns-pdp2__press-logo--futurism"
                   >FUTURISM</span
                 >
-                <span class="nspdp2__press-divider"></span>
-                <span class="nspdp2__press-logo nspdp2__press-logo--yahoo"
+                <span class="ns-pdp2__press-divider"></span>
+                <span class="ns-pdp2__press-logo ns-pdp2__press-logo--yahoo"
                   >yahoo!</span
                 >
-                <span class="nspdp2__press-divider"></span>
-                <span class="nspdp2__press-logo nspdp2__press-logo--wired"
+                <span class="ns-pdp2__press-divider"></span>
+                <span class="ns-pdp2__press-logo ns-pdp2__press-logo--wired"
                   >WIRED</span
                 >
               </div>
             </div>
 
-            <div class="nspdp2__quotes" data-quotes>
-              <div class="nspdp2__quote nspdp2__quote--active" data-idx="0">
-                <p class="nspdp2__quote-text">
+            <div class="ns-pdp2__quotes" data-quotes>
+              <div class="ns-pdp2__quote ns-pdp2__quote--active" data-idx="0">
+                <p class="ns-pdp2__quote-text">
                   My husband snores like a freight train. I tried earplugs,
                   white noise machines, sleeping in another room. NextSense is
                   the first thing that's actually worked.
                 </p>
-                <div class="nspdp2__quote-author">
+                <div class="ns-pdp2__quote-author">
                   Rachel D.
-                  <span class="nspdp2__quote-verified"
+                  <span class="ns-pdp2__quote-verified"
                     >&middot; Verified buyer</span
                   >
                 </div>
               </div>
-              <div class="nspdp2__quote" data-idx="1">
-                <p class="nspdp2__quote-text">
+              <div class="ns-pdp2__quote" data-idx="1">
+                <p class="ns-pdp2__quote-text">
                   I&rsquo;m a side sleeper and these are the only earbuds I can
                   wear all night without my ear hurting. Game changer.
                 </p>
-                <div class="nspdp2__quote-author">
+                <div class="ns-pdp2__quote-author">
                   Marcus T.
-                  <span class="nspdp2__quote-verified"
+                  <span class="ns-pdp2__quote-verified"
                     >&middot; Verified buyer</span
                   >
                 </div>
               </div>
-              <div class="nspdp2__quote" data-idx="2">
-                <p class="nspdp2__quote-text">
+              <div class="ns-pdp2__quote" data-idx="2">
+                <p class="ns-pdp2__quote-text">
                   My old sleep tracker just told me how badly I slept. Smartbuds
                   actually do something about it. My deep sleep is up almost 40%
                   since I started wearing them.
                 </p>
-                <div class="nspdp2__quote-author">
+                <div class="ns-pdp2__quote-author">
                   Jennifer K.
-                  <span class="nspdp2__quote-verified"
+                  <span class="ns-pdp2__quote-verified"
                     >&middot; Verified buyer</span
                   >
                 </div>
               </div>
-              <div class="nspdp2__quote" data-idx="3">
-                <p class="nspdp2__quote-text">
+              <div class="ns-pdp2__quote" data-idx="3">
+                <p class="ns-pdp2__quote-text">
                   I&rsquo;ve tried every sleep gadget. These are the first ones
                   that actually changed my mornings. I wake up clear-headed
                   instead of foggy.
                 </p>
-                <div class="nspdp2__quote-author">
+                <div class="ns-pdp2__quote-author">
                   Sarah M.
-                  <span class="nspdp2__quote-verified"
+                  <span class="ns-pdp2__quote-verified"
                     >&middot; Verified buyer</span
                   >
                 </div>
               </div>
-              <div class="nspdp2__quote" data-idx="4">
-                <p class="nspdp2__quote-text">
+              <div class="ns-pdp2__quote" data-idx="4">
+                <p class="ns-pdp2__quote-text">
                   I travel weekly and these have replaced my regular earbuds,
                   sleep mask, and white noise app. One device, way better sleep
                   on the road.
                 </p>
-                <div class="nspdp2__quote-author">
+                <div class="ns-pdp2__quote-author">
                   David L.
-                  <span class="nspdp2__quote-verified"
+                  <span class="ns-pdp2__quote-verified"
                     >&middot; Verified buyer</span
                   >
                 </div>
               </div>
-              <div class="nspdp2__quote-nav">
+              <div class="ns-pdp2__quote-nav">
                 <button
                   type="button"
-                  class="nspdp2__quote-arrow"
+                  class="ns-pdp2__quote-arrow"
                   data-quote-prev
                   aria-label="Previous testimonial"
                 >
@@ -863,41 +858,41 @@
                     <path d="M15 18l-6-6 6-6" />
                   </svg>
                 </button>
-                <div class="nspdp2__quote-dots">
+                <div class="ns-pdp2__quote-dots">
                   <button
                     type="button"
-                    class="nspdp2__quote-dot nspdp2__quote-dot--active"
+                    class="ns-pdp2__quote-dot ns-pdp2__quote-dot--active"
                     data-quote-idx="0"
                     aria-label="Show testimonial 1"
                   ></button>
                   <button
                     type="button"
-                    class="nspdp2__quote-dot"
+                    class="ns-pdp2__quote-dot"
                     data-quote-idx="1"
                     aria-label="Show testimonial 2"
                   ></button>
                   <button
                     type="button"
-                    class="nspdp2__quote-dot"
+                    class="ns-pdp2__quote-dot"
                     data-quote-idx="2"
                     aria-label="Show testimonial 3"
                   ></button>
                   <button
                     type="button"
-                    class="nspdp2__quote-dot"
+                    class="ns-pdp2__quote-dot"
                     data-quote-idx="3"
                     aria-label="Show testimonial 4"
                   ></button>
                   <button
                     type="button"
-                    class="nspdp2__quote-dot"
+                    class="ns-pdp2__quote-dot"
                     data-quote-idx="4"
                     aria-label="Show testimonial 5"
                   ></button>
                 </div>
                 <button
                   type="button"
-                  class="nspdp2__quote-arrow"
+                  class="ns-pdp2__quote-arrow"
                   data-quote-next
                   aria-label="Next testimonial"
                 >
@@ -915,50 +910,50 @@
               </div>
             </div>
 
-            <div class="nspdp2__tiles" data-tiles>
+            <div class="ns-pdp2__tiles" data-tiles>
               <label
-                class="nspdp2__tile nspdp2__tile--active"
+                class="ns-pdp2__tile ns-pdp2__tile--active"
                 data-tile-id="single"
               >
                 <input
                   type="radio"
-                  name="nspdp2-option"
+                  name="ns-pdp2-option"
                   value="single"
                   checked
                 />
-                <span class="nspdp2__tile-radio"></span>
-                <span class="nspdp2__tile-body">
-                  <span class="nspdp2__tile-head">
-                    <span class="nspdp2__tile-name">Smartbuds</span>
-                    <span class="nspdp2__tile-save">Summer Sale: $50 OFF</span>
+                <span class="ns-pdp2__tile-radio"></span>
+                <span class="ns-pdp2__tile-body">
+                  <span class="ns-pdp2__tile-head">
+                    <span class="ns-pdp2__tile-name">Smartbuds</span>
+                    <span class="ns-pdp2__tile-save">Summer Sale: $50 OFF</span>
                   </span>
-                  <span class="nspdp2__tile-desc"
+                  <span class="ns-pdp2__tile-desc"
                     >Free U.S. Shipping &middot; 1 Year Warranty &middot; iOS
                     Only</span
                   >
                 </span>
-                <span class="nspdp2__tile-price">
-                  <span class="nspdp2__tile-price-main">$299.00</span>
-                  <s class="nspdp2__tile-price-compare">$349.00</s>
+                <span class="ns-pdp2__tile-price">
+                  <span class="ns-pdp2__tile-price-main">$299.00</span>
+                  <s class="ns-pdp2__tile-price-compare">$349.00</s>
                 </span>
               </label>
             </div>
 
             <button
               type="button"
-              class="nspdp2__installments"
-              id="nspdp2-installments"
+              class="ns-pdp2__installments"
+              id="ns-pdp2-installments"
               aria-label="View payment options in cart"
             >
-              <span class="nspdp2__installments-text"
+              <span class="ns-pdp2__installments-text"
                 >Or pay in 4 installments &mdash; select Shop Pay at
                 checkout</span
               >
-              <span class="nspdp2__installments-badge">Shop&nbsp;Pay</span>
+              <span class="ns-pdp2__installments-badge">Shop&nbsp;Pay</span>
             </button>
 
-            <div class="nspdp2__hsa">
-              <span class="nspdp2__hsa-icon">
+            <div class="ns-pdp2__hsa">
+              <span class="ns-pdp2__hsa-icon">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -971,19 +966,19 @@
                   <polyline points="9 12 11 14 15 10" />
                 </svg>
               </span>
-              <span class="nspdp2__hsa-text">
+              <span class="ns-pdp2__hsa-text">
                 <strong>HSA/FSA eligible &middot; Save 30&ndash;40%</strong>
-                <span class="nspdp2__hsa-sub"
+                <span class="ns-pdp2__hsa-sub"
                   >Pay with pre-tax dollars at checkout. Powered by
-                  <span class="nspdp2__hsa-flex">Flex</span>.</span
+                  <span class="ns-pdp2__hsa-flex">Flex</span>.</span
                 >
               </span>
             </div>
 
-            <div class="nspdp2__bonus">
-              <div class="nspdp2__bonus-visual">
+            <div class="ns-pdp2__bonus">
+              <div class="ns-pdp2__bonus-visual">
                 <img
-                  class="nspdp2__bonus-photo"
+                  class="ns-pdp2__bonus-photo"
                   src="https://cdn.shopify.com/s/files/1/0612/0289/0840/files/19292.png?v=1777831710"
                   alt="What's in the box"
                   loading="lazy"
@@ -991,9 +986,9 @@
                   height="200"
                 />
               </div>
-              <div class="nspdp2__bonus-content">
-                <div class="nspdp2__bonus-title">Your order includes</div>
-                <ul class="nspdp2__bonus-list">
+              <div class="ns-pdp2__bonus-content">
+                <div class="ns-pdp2__bonus-title">Your order includes</div>
+                <ul class="ns-pdp2__bonus-list">
                   <li>Smartbuds + wireless charging case</li>
                   <li>3 ear tip and wing sizes for a secure all-night fit</li>
                   <li>Sleep + Focus Mode in the NextSense app</li>
@@ -1004,13 +999,13 @@
 
             <button
               type="button"
-              class="nspdp2__cta"
-              id="nspdp2-cta"
+              class="ns-pdp2__cta"
+              id="ns-pdp2-cta"
               data-variant-id="42242870313048"
             >
-              <span class="nspdp2__cta-label">Add to Cart</span>
+              <span class="ns-pdp2__cta-label">Add to Cart</span>
               <svg
-                class="nspdp2__cta-arrow"
+                class="ns-pdp2__cta-arrow"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -1022,10 +1017,10 @@
               </svg>
             </button>
 
-            <p class="nspdp2__microcommit">30-day money-back guarantee</p>
+            <p class="ns-pdp2__microcommit">30-day money-back guarantee</p>
 
-            <div class="nspdp2__subtrust">
-              <div class="nspdp2__subtrust-item">
+            <div class="ns-pdp2__subtrust">
+              <div class="ns-pdp2__subtrust-item">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -1039,7 +1034,7 @@
                 </svg>
                 <span>30-night trial</span>
               </div>
-              <div class="nspdp2__subtrust-item">
+              <div class="ns-pdp2__subtrust-item">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -1053,7 +1048,7 @@
                 </svg>
                 <span>1-year warranty</span>
               </div>
-              <div class="nspdp2__subtrust-item">
+              <div class="ns-pdp2__subtrust-item">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -1070,8 +1065,8 @@
               </div>
             </div>
 
-            <div class="nspdp2__faq">
-              <details class="nspdp2__faq-item">
+            <div class="ns-pdp2__faq">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>When will my order ship?</span
                   ><svg
@@ -1087,14 +1082,14 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Smartbuds are currently on backorder due to high demand.
                   Orders placed today will begin shipping on September 9. You
                   can order today to lock in your spot, and we'll send tracking
                   the moment your order is on its way.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>How do Smartbuds work?</span
                   ><svg
@@ -1110,7 +1105,7 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Smartbuds use clinical-grade EEG sensors to read your
                   brainwaves in real time. At night, they deliver gentle,
                   personalized sound pulses that deepen your most restorative
@@ -1119,7 +1114,7 @@
                   around your natural alertness.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>What is Focus Mode?</span
                   ><svg
@@ -1135,7 +1130,7 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Focus Mode is a new kind of session built to help your brain
                   lock into the task at hand. Audio adapts in real time to help
                   you get in the zone while Smartbuds track and tame
@@ -1147,7 +1142,7 @@
                   app.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>Who makes Smartbuds?</span
                   ><svg
@@ -1163,7 +1158,7 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Smartbuds are made by NextSense, founded in 2020 by the team
                   behind Google Health's sleep research. Founder and CEO
                   Jonathan Berent was a Director at Google X (Alphabet's
@@ -1174,7 +1169,7 @@
                   clinicians dedicated to making brain health accessible.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>What's in the box?</span
                   ><svg
@@ -1190,14 +1185,14 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Smartbuds + wireless charging case, all 3 sizes of ear tips
                   and wings, USB-C charging cable, and access to the NextSense
                   companion app with both Sleep and Focus Mode included.
                   Requires iPhone 12 or newer running iOS 17+.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>How are Smartbuds different from AirPods?</span
                   ><svg
@@ -1213,7 +1208,7 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Unlike regular earbuds, Smartbuds are built to be slept in all
                   night and use clinical-grade EEG brainwave sensing to track
                   your sleep stages in real time. They're smaller, softer, and
@@ -1223,7 +1218,7 @@
                   day.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>Is my brain data private?</span
                   ><svg
@@ -1239,7 +1234,7 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Yes. We never sell or share your data, and sharing is off by
                   default. Everything is encrypted and stored securely. We link
                   your data to your account to run the app and support you. For
@@ -1248,7 +1243,7 @@
                   anytime from within the app.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>What if they don't work for me?</span
                   ><svg
@@ -1264,14 +1259,14 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Try Smartbuds for 30 days and nights. If they don&rsquo;t
                   improve your sleep or your focus, you&rsquo;re covered by our
                   30-day guarantee. We also include a 1-year warranty on all
                   hardware.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>Are Smartbuds comfortable for side sleepers?</span
                   ><svg
@@ -1287,7 +1282,7 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Yes. Smartbuds are engineered specifically for sleep,
                   significantly smaller and lower-profile than standard wireless
                   earbuds, with soft, flexible ear tips and stabilizing wings
@@ -1296,7 +1291,7 @@
                   pressure-free fit.
                 </div>
               </details>
-              <details class="nspdp2__faq-item">
+              <details class="ns-pdp2__faq-item">
                 <summary>
                   <span>Can I pay with my HSA or FSA?</span
                   ><svg
@@ -1312,7 +1307,7 @@
                     />
                   </svg>
                 </summary>
-                <div class="nspdp2__faq-body">
+                <div class="ns-pdp2__faq-body">
                   Yes. NextSense has partnered with Flex so you can use your
                   Health Savings Account (HSA) or Flexible Spending Account
                   (FSA) debit card to buy Smartbuds with pre-tax dollars, saving
@@ -1398,75 +1393,71 @@
       </section>
 
       <!-- ================= FAQ ================= -->
-      <section class="wrap-faqs" aria-label="Frequently asked questions">
-        <div class="faqs__headline">
-          <h2 class="title">Answers to <span>important questions</span></h2>
-          <div class="faqs__note">
-            <div class="text">
-              <p>
-                Submit a question or concern through
-                <a href="../pages/about.html">this form</a><br />Contact our
-                customer support line: 888-898-8068.
-              </p>
-            </div>
-          </div>
+      <section class="ns-wrap-faqs" aria-label="Frequently asked questions">
+        <div class="ns-faqs__headline">
+          <h2 class="title">
+            Answers to <br /><span>important questions</span>
+          </h2>
         </div>
 
-        <div class="faqs__content" id="faqs">
-          <div class="faqs__category">
+        <div class="ns-faqs__content" id="faqs">
+          <div class="ns-faqs__category">
             <img
               src="https://nextsense.io/cdn/shop/files/neurology.svg?v=1757332033&width=75"
               alt=""
             />
             <h3 class="title title--sm">EEG &amp; Brain data</h3>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">What is EEG and why does it matter?</h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
                   EEG (electroencephalography) measures electrical activity in
                   the brain. It's the gold standard for sleep science, allowing
                   Smartbuds to detect sleep stages and optimize audio in real
-                  time&mdash;unlike wrist trackers that only infer sleep from
-                  movement or heart rate.
+                  time—unlike wrist trackers that only infer sleep from movement
+                  or heart rate.
                 </p>
               </div>
             </div>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">Can Smartbuds read my thoughts?</h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
-                  No. EEG detects patterns like sleep depth or
-                  transitions&mdash;not thoughts, memories, or emotions. Your
-                  mental privacy is deeply respected.
+                  No. EEG detects patterns like sleep depth or transitions—not
+                  thoughts, memories, or emotions. Your mental privacy is deeply
+                  respected.
                 </p>
               </div>
             </div>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">Is my brain data private?</h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
                   Yes. We never sell or share your data. Data sharing is off by
@@ -1477,15 +1468,16 @@
               </div>
             </div>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">What is slow-wave sleep?</h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
                   Slow-wave sleep, also called deep sleep, is the most
@@ -1497,26 +1489,27 @@
             </div>
           </div>
 
-          <div class="faqs__category">
+          <div class="ns-faqs__category">
             <img
               src="https://nextsense.io/cdn/shop/files/audio-waves.svg?v=1757135287&width=75"
               alt=""
             />
             <h3 class="title title--sm">Sounds</h3>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">Can sound hurt my sleep?</h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
-                  It can&mdash;if it's the wrong kind. Jarring, unpredictable,
-                  or overly stimulating audio can disrupt your rest. That's why
+                  It can—if it's the wrong kind. Jarring, unpredictable, or
+                  overly stimulating audio can disrupt your rest. That's why
                   Smartbuds use gentle soundscapes specifically designed to
                   support healthy sleep. When personalized and timed right,
                   sound can actually enhance your sleep rather than interrupt
@@ -1525,44 +1518,46 @@
               </div>
             </div>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">What is slow-wave enhancement?</h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
                   Slow-wave enhancement is a technique that uses precisely timed
-                  sound (soft pink noise) to nudge your brain waves into their
-                  most restorative rhythm. This enhances the quality of your
-                  sleep without waking you up.
+                  sound to nudge your brain waves into their most restorative
+                  rhythm. This enhances the quality of your sleep without waking
+                  you up.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="faqs__category">
+          <div class="ns-faqs__category">
             <img
               src="https://nextsense.io/cdn/shop/files/favorite.svg?v=1757332044&width=75"
               alt=""
             />
             <h3 class="title title--sm">Care &amp; Cleaning</h3>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">
                 How do I clean my earbuds and sleeves?
               </h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
                   Use a cloth dampened with bottled water to gently clean the
@@ -1572,37 +1567,38 @@
               </div>
             </div>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">
                 How do I replace my wings and/or tips?
               </h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
                   Smartbuds' wings and tips require regular replacement to
                   continue collecting brain data. Always handle them gently and
-                  even if you're only swapping out wings, you&rsquo;ll need to
-                  take the tip off first.
+                  even if you're only swapping out wings, you'll need to take
+                  the tip off first.
                 </p>
                 <ol>
                   <li>
                     <strong>Step 1: Remove the tip.</strong> Hold the earbud
                     firmly in one hand. With the other hand, pinch the silicone
                     tip near its base and pull it straight off using a slow,
-                    steady motion. Don&rsquo;t twist or yank&mdash;these
-                    components are delicate and house important sensors.
+                    steady motion. Don't twist or yank—these components are
+                    delicate and house important sensors.
                   </li>
                   <li>
                     <strong>Step 2: Remove the wing.</strong> Gently peel the
                     wing away from the body of the earbud, starting at one edge
                     and working around. It should come off with light, even
-                    pressure&mdash;no need to force it.
+                    pressure—no need to force it.
                   </li>
                   <li>
                     <strong>Step 3: Attach the new wing.</strong> Align the new
@@ -1613,22 +1609,23 @@
                   <li>
                     <strong>Step 4: Attach the new tip.</strong> Align the new
                     tip with the nozzle of the earbud. Press it on firmly until
-                    it feels secure&mdash;you may hear or feel a soft click when
-                    it&rsquo;s in place.
+                    it feels secure—you may hear or feel a soft click when it's
+                    in place.
                   </li>
                 </ol>
               </div>
             </div>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">Are Smartbuds waterproof?</h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
                   No. Avoid rain, heavy sweat, and any moisture exposure. Do not
@@ -1638,118 +1635,32 @@
             </div>
           </div>
 
-          <div class="faqs__category">
+          <div class="ns-faqs__category">
             <img
               src="https://nextsense.io/cdn/shop/files/grid_view.svg?v=1757332051&width=75"
               alt=""
             />
             <h3 class="title title--sm">Apps &amp; Features</h3>
           </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
+
+          <div class="ns-single-faq" data-faq-item>
+            <div class="ns-single-faq__header" data-faq-toggle>
               <h3 class="text text--xl">What is sleep routine?</h3>
-              <div class="single-faq__icon">
+              <div class="ns-single-faq__icon">
                 <div class="horizontal"></div>
                 <div class="vertical"></div>
               </div>
             </div>
-            <div class="single-faq__text">
+            <div class="ns-single-faq__text">
               <div class="text">
                 <p>
                   Your sleep routine is the window when you aim to be
-                  asleep&mdash;from your usual bedtime to your usual wake-up
-                  time. Setting it helps us customize your experience, like
-                  reminding you to charge your Smartbuds before bed. It
-                  doesn&rsquo;t set an alarm or prevent you from starting a
-                  sleep session at a different time. Many users also find it
-                  helpful for setting sleep goals and keeping a consistent sleep
-                  schedule.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faqs__category">
-            <h3 class="title title--sm">About NextSense</h3>
-          </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
-              <h3 class="text text--xl">What are NextSense Smartbuds?</h3>
-              <div class="single-faq__icon">
-                <div class="horizontal"></div>
-                <div class="vertical"></div>
-              </div>
-            </div>
-            <div class="single-faq__text">
-              <div class="text">
-                <p>
-                  Wireless earbuds with clinical-grade in-ear EEG that read your
-                  brain's rhythm and play sound to deepen restorative sleep. The
-                  technology originated in Alphabet's X moonshot factory and was
-                  validated in research at Emory University.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
-              <h3 class="text text--xl">
-                How are Smartbuds different from an Oura Ring, WHOOP, or Apple
-                Watch?
-              </h3>
-              <div class="single-faq__icon">
-                <div class="horizontal"></div>
-                <div class="vertical"></div>
-              </div>
-            </div>
-            <div class="single-faq__text">
-              <div class="text">
-                <p>
-                  Those devices infer sleep from wrist or finger signals and
-                  only measure it. NextSense Smartbuds read the brain directly
-                  with EEG and actively work to improve sleep in real time,
-                  rather than only scoring it.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
-              <h3 class="text text--xl">
-                Is the science behind NextSense real?
-              </h3>
-              <div class="single-faq__icon">
-                <div class="horizontal"></div>
-                <div class="vertical"></div>
-              </div>
-            </div>
-            <div class="single-faq__text">
-              <div class="text">
-                <p>
-                  Yes. NextSense in-ear EEG is peer-reviewed in Bioelectronic
-                  Medicine (2024 and 2026) and was validated against
-                  intracranial EEG, detecting about 86% of focal seizures across
-                  1,255+ hours in 20 patients, with collaborators from Emory,
-                  Northwestern, McGill, and Mayo.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="single-faq" data-faq-item>
-            <div class="single-faq__header" data-faq-toggle>
-              <h3 class="text text--xl">
-                What can NextSense Smartbuds help with?
-              </h3>
-              <div class="single-faq__icon">
-                <div class="horizontal"></div>
-                <div class="vertical"></div>
-              </div>
-            </div>
-            <div class="single-faq__text">
-              <div class="text">
-                <p>
-                  Deepening restorative sleep, falling asleep, focus,
-                  meditation, and daytime fatigue or energy.
+                  asleep—from your usual bedtime to your usual wake-up time.
+                  Setting it helps us customize your experience, like reminding
+                  you to charge your Smartbuds before bed. It doesn't set an
+                  alarm or prevent you from starting a sleep session at a
+                  different time. Many users also find it helpful for setting
+                  sleep goals and keeping a consistent sleep schedule.
                 </p>
               </div>
             </div>
@@ -1932,7 +1843,7 @@
       </div>
     </div>
 
-   <!-- ================= FOOTER ================= -->
+    <!-- ================= FOOTER ================= -->
     <footer id="ns-footer-section" class="ns-footer-section">
       <div class="container">
         <div class="ns-footer-content">
@@ -1940,7 +1851,9 @@
             <div class="ns-footer-single-menu">
               <h4 class="ns-footer-headline">Company</h4>
               <ul class="ns-footer-menu">
-                <li class="ns-footer-menu-item"><a href="/pages/about">About Us</a></li>
+                <li class="ns-footer-menu-item">
+                  <a href="/pages/about">About Us</a>
+                </li>
                 <li class="ns-footer-menu-item">
                   <a href="/products/smartbuds">Product</a>
                 </li>
@@ -1960,9 +1873,15 @@
                     >Support</a
                   >
                 </li>
-                <li class="ns-footer-menu-item"><a href="/pages/press">Press</a></li>
-                <li class="ns-footer-menu-item"><a href="/pages/privacy">Privacy</a></li>
-                <li class="ns-footer-menu-item"><a href="/blogs/news">Blog</a></li>
+                <li class="ns-footer-menu-item">
+                  <a href="/pages/press">Press</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="/pages/privacy">Privacy</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="/blogs/news">Blog</a>
+                </li>
               </ul>
             </div>
             <div class="ns-footer-single-menu">
@@ -2070,8 +1989,8 @@
         }
 
         // Gallery stage + thumbs
-        var stageSlides = document.querySelectorAll(".nspdp2__stage-slide");
-        var thumbs = document.querySelectorAll(".nspdp2__thumb");
+        var stageSlides = document.querySelectorAll(".ns-pdp2__stage-slide");
+        var thumbs = document.querySelectorAll(".ns-pdp2__thumb");
         var activeIdx = 0;
 
         function hydrateImage(slide) {
@@ -2087,10 +2006,10 @@
           if (idx >= stageSlides.length) idx = 0;
           activeIdx = idx;
           stageSlides.forEach(function (s, i) {
-            s.classList.toggle("nspdp2__stage-slide--active", i === idx);
+            s.classList.toggle("ns-pdp2__stage-slide--active", i === idx);
           });
           thumbs.forEach(function (t, i) {
-            t.classList.toggle("nspdp2__thumb--active", i === idx);
+            t.classList.toggle("ns-pdp2__thumb--active", i === idx);
           });
           hydrateImage(stageSlides[idx]);
           if (stageSlides[idx + 1]) hydrateImage(stageSlides[idx + 1]);
@@ -2118,8 +2037,8 @@
         // Quote rotation
         var quotesWrap = document.querySelector("[data-quotes]");
         if (quotesWrap) {
-          var quotes = quotesWrap.querySelectorAll(".nspdp2__quote");
-          var dots = quotesWrap.querySelectorAll(".nspdp2__quote-dot");
+          var quotes = quotesWrap.querySelectorAll(".ns-pdp2__quote");
+          var dots = quotesWrap.querySelectorAll(".ns-pdp2__quote-dot");
           var quoteIdx = 0;
           function showQuote(idx) {
             if (quotes.length === 0) return;
@@ -2127,10 +2046,10 @@
             if (idx >= quotes.length) idx = 0;
             quoteIdx = idx;
             quotes.forEach(function (q, i) {
-              q.classList.toggle("nspdp2__quote--active", i === idx);
+              q.classList.toggle("ns-pdp2__quote--active", i === idx);
             });
             dots.forEach(function (d, i) {
-              d.classList.toggle("nspdp2__quote-dot--active", i === idx);
+              d.classList.toggle("ns-pdp2__quote-dot--active", i === idx);
             });
           }
           dots.forEach(function (d) {
@@ -2154,13 +2073,13 @@
         }
 
         // Tile selection
-        var tiles = document.querySelectorAll(".nspdp2__tile");
+        var tiles = document.querySelectorAll(".ns-pdp2__tile");
         tiles.forEach(function (tile) {
           tile.addEventListener("click", function () {
             tiles.forEach(function (t) {
-              t.classList.remove("nspdp2__tile--active");
+              t.classList.remove("ns-pdp2__tile--active");
             });
-            tile.classList.add("nspdp2__tile--active");
+            tile.classList.add("ns-pdp2__tile--active");
             var input = tile.querySelector('input[type="radio"]');
             if (input) input.checked = true;
           });
@@ -2169,8 +2088,8 @@
         // Sticky ATC visibility
         var stickyBar = document.getElementById("ns-sticky-atc");
         var buyAnchor =
-          document.querySelector(".nspdp2__subtrust") ||
-          document.getElementById("nspdp2-cta");
+          document.querySelector(".ns-pdp2__subtrust") ||
+          document.getElementById("ns-pdp2-cta");
         if (stickyBar && buyAnchor && "IntersectionObserver" in window) {
           new IntersectionObserver(
             function (entries) {

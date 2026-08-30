@@ -1583,18 +1583,14 @@ body.ns-cart-open {
 
 .ns-wrap-faqs {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   background: linear-gradient(
     0deg,
     rgb(var(--blue-rgb) / 0.4) 0%,
     var(--white) 100%
   );
   padding: 96px 0 120px;
-}
-
-.ns-wrap-faqs {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
 }
 
 .ns-faqs__headline {
@@ -1642,6 +1638,7 @@ body.ns-cart-open {
   font-weight: 600;
   color: var(--ink);
   letter-spacing: -0.01em;
+  margin-bottom: 0;
 }
 .ns-single-faq {
   border-bottom: 1px solid rgb(var(--ink-rgb) / 0.12);
@@ -1661,6 +1658,7 @@ body.ns-cart-open {
   color: var(--ink);
   letter-spacing: -0.01em;
   line-height: 1.35;
+  margin-bottom: 0;
 }
 .ns-single-faq__icon {
   position: relative;
@@ -1723,12 +1721,16 @@ body.ns-cart-open {
 }
 
 @media (max-width: 900px) {
-  .wrap-faqs {
+  .ns-wrap-faqs {
     padding: 64px 0 80px;
     flex-direction: column;
   }
-  .faqs__headline {
+  .ns-faqs__headline {
     margin-bottom: 40px;
+  }
+
+  .ns-single-faq__header .text--xl {
+    margin-bottom: 0;
   }
 }
 
@@ -1841,6 +1843,7 @@ body.ns-cart-open {
   font-size: 16px;
   cursor: pointer;
   padding: 8px 4px;
+  border: none;
   margin-top: 18px;
   white-space: nowrap;
 }
