@@ -1633,9 +1633,9 @@ body.ns-cart-open {
   height: 26px;
 }
 .ns-faqs__category .title--sm {
-  font-family: var(--f-body);
-  font-size: 19px;
-  font-weight: 600;
+  font-family: Victor Serif;
+  font-size: 36px;
+  font-weight: 300;
   color: var(--ink);
   letter-spacing: -0.01em;
   margin-bottom: 0;
