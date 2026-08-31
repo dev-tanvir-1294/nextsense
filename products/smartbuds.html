@@ -1967,6 +1967,24 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+    <script>
+      (function () {
+        if (
+          typeof Lenis === "undefined" ||
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+          return;
+        }
+
+        window.nextSenseLenis = new Lenis({
+          autoRaf: true,
+          anchors: true,
+          smoothWheel: true,
+        });
+      })();
+    </script>
+
     <script>
       (function () {
         // FAQ accordion
