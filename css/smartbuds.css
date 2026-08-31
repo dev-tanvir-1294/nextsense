@@ -1636,6 +1636,7 @@ html.pdp-ns-html body {
   }
   .ns-tech__inner {
     min-height: 100%;
+    flex-direction: column;
   }
   .ns-tech__graphic {
     top: 36%;
@@ -1644,8 +1645,9 @@ html.pdp-ns-html body {
     height: 36%;
   }
   .ns-tech__graphic img {
-    max-width: 210px;
-    max-height: 210px;
+    width: 650px;
+    height: 450px;
+    object-fit: contain;
   }
   .ns-tech__content {
     width: 100%;
