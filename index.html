@@ -1109,113 +1109,113 @@
     </script>
 
     <script>
-      (function () {
-        var container = document.getElementById("faqs");
-        if (!container) return;
+        (function () {
+          var container = document.getElementById("faqs");
+          if (!container) return;
 
-        var items = container.querySelectorAll("[data-faq-item]");
+          var items = container.querySelectorAll("[data-faq-item]");
 
-        items.forEach(function (item) {
-          var toggle = item.querySelector("[data-faq-toggle]");
-          if (!toggle) return;
+          items.forEach(function (item) {
+            var toggle = item.querySelector("[data-faq-toggle]");
+            if (!toggle) return;
 
-          toggle.addEventListener("click", function () {
-            var isActive = item.classList.contains("active");
+            toggle.addEventListener("click", function () {
+              var isActive = item.classList.contains("active");
 
-            items.forEach(function (other) {
-              other.classList.remove("active");
+              items.forEach(function (other) {
+                other.classList.remove("active");
+              });
+
+              if (!isActive) {
+                item.classList.add("active");
+              }
             });
+          });
 
-            if (!isActive) {
-              item.classList.add("active");
+          // Pause background video for users who prefer reduced motion.
+          var video = document.getElementById("ns-hero-vid");
+          if (
+            video &&
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ) {
+            video.pause();
+          }
+        })();
+      </script>
+
+      <script>
+        (function () {
+          // Header scroll state
+          var headerSection = document.querySelector(".header-section");
+          function onScroll() {
+            if (headerSection) {
+              if (window.scrollY > 10) {
+                headerSection.classList.add("ns-scrolled");
+              } else {
+                headerSection.classList.remove("ns-scrolled");
+              }
+            }
+          }
+          window.addEventListener("scroll", onScroll, { passive: true });
+          onScroll();
+
+          // Mobile drawer
+          var mobileToggle = document.getElementById("ns-mobile-toggle");
+          var mobileClose = document.getElementById("ns-mobile-close");
+          var mobileDrawer = document.getElementById("ns-mobile-drawer");
+          var mobileBackdrop = document.getElementById("ns-mobile-backdrop");
+
+          function openMobileMenu() {
+            if (!mobileDrawer) return;
+            mobileDrawer.classList.add("is-open");
+            mobileDrawer.setAttribute("aria-hidden", "false");
+            if (mobileBackdrop) mobileBackdrop.classList.add("is-open");
+            document.body.classList.add("ns-mobile-menu-open");
+          }
+          function closeMobileMenu() {
+            if (!mobileDrawer) return;
+            mobileDrawer.classList.remove("is-open");
+            mobileDrawer.setAttribute("aria-hidden", "true");
+            if (mobileBackdrop) mobileBackdrop.classList.remove("is-open");
+            document.body.classList.remove("ns-mobile-menu-open");
+          }
+          if (mobileToggle)
+            mobileToggle.addEventListener("click", openMobileMenu);
+          if (mobileClose) mobileClose.addEventListener("click", closeMobileMenu);
+          if (mobileBackdrop)
+            mobileBackdrop.addEventListener("click", closeMobileMenu);
+
+          // Cart drawer
+          var cartTrigger = document.getElementById("ns-cart-trigger");
+          var cartClose = document.getElementById("ns-cart-close");
+          var cartDrawer = document.getElementById("ns-cart-drawer");
+          var cartBackdrop = document.getElementById("ns-cart-backdrop");
+
+          function openCart() {
+            if (!cartDrawer) return;
+            cartDrawer.classList.add("open");
+            if (cartBackdrop) cartBackdrop.classList.add("open");
+            document.body.classList.add("ns-cart-open");
+          }
+          function closeCart() {
+            if (!cartDrawer) return;
+            cartDrawer.classList.remove("open");
+            if (cartBackdrop) cartBackdrop.classList.remove("open");
+            document.body.classList.remove("ns-cart-open");
+          }
+          if (cartTrigger) cartTrigger.addEventListener("click", openCart);
+          if (cartClose) cartClose.addEventListener("click", closeCart);
+          if (cartBackdrop) cartBackdrop.addEventListener("click", closeCart);
+
+          // Close drawers on Escape
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+              closeMobileMenu();
+              closeCart();
             }
           });
-        });
-
-        // Pause background video for users who prefer reduced motion.
-        var video = document.getElementById("ns-hero-vid");
-        if (
-          video &&
-          window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ) {
-          video.pause();
-        }
-      })();
-    </script>
-
-    <script>
-      (function () {
-        // Header scroll state
-        var headerSection = document.querySelector(".header-section");
-        function onScroll() {
-          if (headerSection) {
-            if (window.scrollY > 10) {
-              headerSection.classList.add("ns-scrolled");
-            } else {
-              headerSection.classList.remove("ns-scrolled");
-            }
-          }
-        }
-        window.addEventListener("scroll", onScroll, { passive: true });
-        onScroll();
-
-        // Mobile drawer
-        var mobileToggle = document.getElementById("ns-mobile-toggle");
-        var mobileClose = document.getElementById("ns-mobile-close");
-        var mobileDrawer = document.getElementById("ns-mobile-drawer");
-        var mobileBackdrop = document.getElementById("ns-mobile-backdrop");
-
-        function openMobileMenu() {
-          if (!mobileDrawer) return;
-          mobileDrawer.classList.add("is-open");
-          mobileDrawer.setAttribute("aria-hidden", "false");
-          if (mobileBackdrop) mobileBackdrop.classList.add("is-open");
-          document.body.classList.add("ns-mobile-menu-open");
-        }
-        function closeMobileMenu() {
-          if (!mobileDrawer) return;
-          mobileDrawer.classList.remove("is-open");
-          mobileDrawer.setAttribute("aria-hidden", "true");
-          if (mobileBackdrop) mobileBackdrop.classList.remove("is-open");
-          document.body.classList.remove("ns-mobile-menu-open");
-        }
-        if (mobileToggle)
-          mobileToggle.addEventListener("click", openMobileMenu);
-        if (mobileClose) mobileClose.addEventListener("click", closeMobileMenu);
-        if (mobileBackdrop)
-          mobileBackdrop.addEventListener("click", closeMobileMenu);
-
-        // Cart drawer
-        var cartTrigger = document.getElementById("ns-cart-trigger");
-        var cartClose = document.getElementById("ns-cart-close");
-        var cartDrawer = document.getElementById("ns-cart-drawer");
-        var cartBackdrop = document.getElementById("ns-cart-backdrop");
-
-        function openCart() {
-          if (!cartDrawer) return;
-          cartDrawer.classList.add("open");
-          if (cartBackdrop) cartBackdrop.classList.add("open");
-          document.body.classList.add("ns-cart-open");
-        }
-        function closeCart() {
-          if (!cartDrawer) return;
-          cartDrawer.classList.remove("open");
-          if (cartBackdrop) cartBackdrop.classList.remove("open");
-          document.body.classList.remove("ns-cart-open");
-        }
-        if (cartTrigger) cartTrigger.addEventListener("click", openCart);
-        if (cartClose) cartClose.addEventListener("click", closeCart);
-        if (cartBackdrop) cartBackdrop.addEventListener("click", closeCart);
-
-        // Close drawers on Escape
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape") {
-            closeMobileMenu();
-            closeCart();
-          }
-        });
-      })();
-    </script>
+        })();
+      </script>
 
     <script>
       (function () {
