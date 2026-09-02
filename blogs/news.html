@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en" class="ns-blog-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The NextSense blog explores sleep science, research, practical tips, and product stories to help you sleep deeper and live better."
+    />
+    <title>The NextSense Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+  </head>
+
+  <body class="ns-blog-page">
+    <header id="ns-header-section" class="header-section">
+      <div class="ns-announcement" id="ns-announcement">
+        <div class="ns-announcement-inner">
+          <div class="ns-announcement-track" data-announcement-track>
+            <div class="ns-announcement-slide is-active">
+              <span class="ns-announcement-msg">
+                <span class="ns-announcement-msg-full"
+                  ><strong>Use code WELCOME15 for 15% off your order</strong> +
+                  free shipping</span
+                >
+                <span class="ns-announcement-msg-mobile"
+                  ><strong>Use code WELCOME15 for 15% off your order</strong> +
+                  free shipping</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header-component
+        id="ns-header-component"
+        class="ns-header"
+        data-skip-node-update
+        data-scroll-direction="none"
+      >
+        <div class="ns-header-inner container">
+          <button
+            class="ns-mob-toggle"
+            id="ns-mobile-toggle"
+            aria-label="Open menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+
+          <a href="../index.html" class="ns-logo">
+            <div class="logo">
+              <img
+                src="https://nextsense.io/cdn/shop/files/nextsense-logo.svg?height=22&v=1756266729"
+                alt="NextSense"
+                width="212"
+                height="22"
+                loading="lazy"
+              />
+            </div>
+            <div class="logo--mobile">
+              <img
+                src="https://nextsense.io/cdn/shop/files/nextsense-iso.svg?height=24&v=1756266729"
+                alt="NextSense"
+                width="41"
+                height="24"
+                loading="lazy"
+              />
+            </div>
+          </a>
+
+          <nav class="ns-nav" role="navigation" aria-label="Main navigation">
+            <div class="ns-nav-item">
+              <a href="../products/smartbuds.html" class="ns-nav-link"
+                >Smartbuds</a
+              >
+            </div>
+            <div class="ns-nav-item">
+              <a href="#" class="ns-nav-link">Tips &amp; Wings</a>
+            </div>
+            <div class="ns-nav-item has-dropdown" id="ns-learn-nav">
+              <button
+                type="button"
+                class="ns-nav-link has-caret"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Learn
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="ns-dropdown" role="menu">
+                <a
+                  href="../index.html"
+                  class="ns-dropdown-link"
+                  role="menuitem"
+                >
+                  About
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="news.html" class="ns-dropdown-link" role="menuitem">
+                  Blog
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="ns-nav-item">
+              <a href="#" class="ns-nav-link">Clinical</a>
+            </div>
+          </nav>
+
+          <div class="ns-right">
+            <button
+              class="ns-cart-trigger"
+              id="ns-cart-trigger"
+              aria-label="Open cart"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path
+                  d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"
+                />
+              </svg>
+              <span class="ns-cart-trigger-badge" id="ns-cart-badge">0</span>
+            </button>
+
+            <a href="#" class="ns-account-btn" aria-label="Account">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header-component>
+    </header>
+
+    <div class="ns-mobile-backdrop" id="ns-mobile-backdrop"></div>
+
+    <div class="ns-mobile-drawer" id="ns-mobile-drawer" aria-hidden="true">
+      <div class="ns-mobile-header">
+        <a href="../index.html" class="ns-mobile-logo" id="ns-mobile-logo-link">
+          <img
+            src="https://nextsense.io/cdn/shop/files/nextsense-logo.svg?height=22&v=1756266729"
+            alt="NextSense"
+            width="212"
+            height="22"
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="ns-mobile-close"
+          id="ns-mobile-close"
+          aria-label="Close menu"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="ns-mobile-hero">
+        <div class="ns-mobile-hero-image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0612/0289/0840/files/12233_20c104f9-fd0f-459c-b3ab-8f454d269a95.png?v=1776489711"
+            alt="Smartbuds"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+        <div class="ns-mobile-hero-body">
+          <div class="ns-mobile-hero-label">Smartbuds</div>
+          <h3 class="ns-mobile-hero-title">
+            Deep sleep by night. Deep focus by day.
+          </h3>
+          <p class="ns-mobile-hero-desc">
+            Smart earbuds that work with your brain to restore your sleep and
+            sharpen your focus.
+          </p>
+          <div class="ns-mobile-hero-proof">
+            <span class="ns-mobile-hero-proof-stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"
+                />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"
+                />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"
+                />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12,2 15,9 22,9.5 17,14.5 18.5,22 12,18 5.5,22 7,14.5 2,9.5 9,9"
+                />
+              </svg>
+            </span>
+            <span class="ns-mobile-hero-proof-text"
+              >Loved by <strong>2,847+ verified customers</strong></span
+            >
+          </div>
+          <div class="ns-mobile-hero-meta">
+            <span class="ns-mobile-hero-meta-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 2v6L3 20a2 2 0 002 2h14a2 2 0 002-2L15 8V2" />
+                <line x1="9" y1="2" x2="15" y2="2" />
+              </svg>
+              Clinically tested
+            </span>
+            <span class="ns-mobile-hero-meta-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              30-night trial
+            </span>
+            <span class="ns-mobile-hero-meta-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <polyline points="9 12 11 14 15 10" />
+              </svg>
+              1-year warranty
+            </span>
+            <span class="ns-mobile-hero-meta-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M1 3h15v13H1zM16 8h4l3 3v5h-7M5.5 21a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM18.5 21a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
+                />
+              </svg>
+              Free shipping
+            </span>
+          </div>
+          <a href="../products/smartbuds.html" class="ns-mobile-hero-cta">
+            Shop Smartbuds
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="ns-mobile-nav">
+        <a href="#"
+          >Tips &amp; Wings<svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" /></svg
+        ></a>
+        <a href="../index.html"
+          >About<svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" /></svg
+        ></a>
+        <a href="#"
+          >Clinical<svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" /></svg
+        ></a>
+        <a href="news.html"
+          >Blog<svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" /></svg
+        ></a>
+      </nav>
+    </div>
+
+    <div class="ns-cart-backdrop" id="ns-cart-backdrop"></div>
+    <div class="ns-cart-drawer" id="ns-cart-drawer">
+      <div class="ns-cart-header">
+        <div>
+          <span class="ns-cart-title">Your Cart</span>
+          <span class="ns-cart-count" id="ns-cart-count"></span>
+        </div>
+        <button
+          class="ns-cart-close"
+          id="ns-cart-close"
+          aria-label="Close cart"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="ns-cart-scroll" id="ns-cart-scroll">
+        <div class="ns-cart-empty">
+          <span class="ns-cart-empty-title">Your cart is empty</span>
+          <span class="ns-cart-empty-text"
+            >Smartbuds will change how you sleep.</span
+          >
+          <a href="../products/smartbuds.html" class="ns-cart-empty-cta"
+            >Shop Smartbuds</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <main id="MainContent" role="main">
+      <section class="ns-blog-section">
+        <div class="ns-blog-shell">
+          <div class="ns-blog-hero">
+            <div class="ns-blog-hero-copy">
+              <span class="ns-blog-eyebrow">NextSense Journal</span>
+              <h1 class="ns-blog-title">Sleep deeper. Live brighter.</h1>
+              <p class="ns-blog-subtitle">
+                Research, practical guidance, and stories on how better sleep
+                can improve focus, mood, energy, and performance.
+              </p>
+            </div>
+            <div class="ns-blog-hero-panel">
+              <div class="ns-blog-stat">
+                <span class="ns-blog-stat-value">10+</span>
+                <span class="ns-blog-stat-label">fresh insights</span>
+              </div>
+              <div class="ns-blog-stat">
+                <span class="ns-blog-stat-value">3 min</span>
+                <span class="ns-blog-stat-label">average read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ns-blog-toolbar" aria-label="Blog categories">
+            <button type="button" class="ns-blog-filter is-active">All</button>
+            <button type="button" class="ns-blog-filter">Sleep Science</button>
+            <button type="button" class="ns-blog-filter">EEG</button>
+            <button type="button" class="ns-blog-filter">Tips</button>
+            <button type="button" class="ns-blog-filter">
+              Clinical Research
+            </button>
+          </div>
+
+          <div class="ns-blog-archive">
+            <article class="ns-blog-feature">
+              <div class="ns-blog-feature-media">
+                <img
+                  src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Person sleeping comfortably"
+                  loading="lazy"
+                />
+              </div>
+              <div class="ns-blog-feature-content">
+                <span class="ns-blog-kicker">Sleep Science</span>
+                <h2 class="ns-blog-card-title">
+                  Why can’t I sleep even though I’m tired?
+                </h2>
+                <div class="ns-blog-card-meta">
+                  <span>January 27, 2025</span>
+                  <span class="sep">|</span>
+                  <span>7 min read</span>
+                </div>
+                <p class="ns-blog-card-copy">
+                  Tiredness is not always the same as sleep pressure. Stress,
+                  anxiety, screen light, and inconsistent routines can keep your
+                  brain alert even when your body is ready to rest.
+                </p>
+                <a class="ns-blog-card-link" href="news/why-cant-i-sleep.html">
+                  Read more
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <div class="ns-blog-stack">
+              <article class="ns-blog-side-card">
+                <div class="ns-blog-side-card-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                    alt="Speaker on stage"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="ns-blog-side-card-body">
+                  <h3 class="ns-blog-card-title">
+                    The Future of Sleep with NextSense CEO Jonathan Berent
+                  </h3>
+                  <div class="ns-blog-card-meta">
+                    <span>1 min read</span>
+                  </div>
+                  <a
+                    class="ns-blog-card-link"
+                    href="news/why-cant-i-sleep.html"
+                  >
+                    Read more
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="ns-blog-side-card">
+                <div class="ns-blog-side-card-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80"
+                    alt="Person relaxing with a calm expression"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="ns-blog-side-card-body">
+                  <h3 class="ns-blog-card-title">
+                    How to break the vicious cycle of anxiety and sleep
+                    deprivation
+                  </h3>
+                  <div class="ns-blog-card-meta">
+                    <span>9 min read</span>
+                  </div>
+                  <a
+                    class="ns-blog-card-link"
+                    href="news/why-cant-i-sleep.html"
+                  >
+                    Read more
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="ns-blog-list">
+            <article class="ns-blog-item">
+              <div class="ns-blog-item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80"
+                  alt="Sleep stage concept"
+                  loading="lazy"
+                />
+              </div>
+              <div class="ns-blog-item-body">
+                <span class="ns-blog-item-tag">Clinical Research</span>
+                <h3 class="ns-blog-item-title">
+                  Why we don't show you a 5-stage sleep hypnogram
+                </h3>
+                <div class="ns-blog-item-meta">
+                  <span>March 20, 2026</span>
+                  <span>|</span>
+                  <span>3 min read</span>
+                </div>
+                <a class="ns-blog-item-link" href="news/why-cant-i-sleep.html">
+                  Read more
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="ns-blog-item">
+              <div class="ns-blog-item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=900&q=80"
+                  alt="Night routine and restful sleep"
+                  loading="lazy"
+                />
+              </div>
+              <div class="ns-blog-item-body">
+                <span class="ns-blog-item-tag">Sleep Science</span>
+                <h3 class="ns-blog-item-title">
+                  Sleep mindset: the unspoken secret to better sleep
+                </h3>
+                <div class="ns-blog-item-meta">
+                  <span>4 min read</span>
+                </div>
+                <a class="ns-blog-item-link" href="news/why-cant-i-sleep.html">
+                  Read more
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="ns-blog-item">
+              <div class="ns-blog-item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                  alt="Calming bedroom lighting"
+                  loading="lazy"
+                />
+              </div>
+              <div class="ns-blog-item-body">
+                <span class="ns-blog-item-tag">Tips</span>
+                <h3 class="ns-blog-item-title">
+                  A calmer wind-down routine for deeper sleep
+                </h3>
+                <div class="ns-blog-item-meta">
+                  <span>5 min read</span>
+                </div>
+                <a class="ns-blog-item-link" href="news/why-cant-i-sleep.html">
+                  Read more
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="ns-footer-section" class="ns-footer-section">
+      <div class="container">
+        <div class="ns-footer-content">
+          <div class="ns-footer-main-menu">
+            <div class="ns-footer-single-menu">
+              <h4 class="ns-footer-headline">Company</h4>
+              <ul class="ns-footer-menu">
+                <li class="ns-footer-menu-item">
+                  <a href="../index.html">About Us</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="../products/smartbuds.html">Product</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="#">Wings &amp; Tips</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="#">Clinical</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a
+                    href="https://nextsensesupport.zendesk.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Support</a
+                  >
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="#">Press</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="#">Privacy</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="news.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ns-footer-single-menu">
+              <h4 class="ns-footer-headline">Social</h4>
+              <ul class="ns-footer-menu">
+                <li class="ns-footer-menu-item">
+                  <a
+                    href="https://www.linkedin.com/company/nextsense-inc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a
+                    href="https://www.instagram.com/nextsenseofficial/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a
+                    href="https://www.tiktok.com/@nextsenseofficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >TikTok</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ns-footer-form">
+            <h4 class="ns-footer-headline">Stay in Touch</h4>
+            <div class="text">
+              <p>
+                Join our newsletter for real talk, helpful habits, and
+                absolutely no spam.
+              </p>
+            </div>
+            <form class="ns-footer-newsletter-form" action="#" method="post">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                aria-label="Email address"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <div class="ns-footer-legal">
+            <div class="ns-footer-single-menu">
+              <h4 class="ns-footer-headline">Legal</h4>
+              <ul class="ns-footer-menu">
+                <li class="ns-footer-menu-item">
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li class="ns-footer-menu-item">
+                  <a href="#">Terms of Service</a>
+                </li>
+              </ul>
+              <div class="text text--sm">
+                © 2025 NextSense. | All Rights Reserved
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ns-footer-logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 327 32"
+            width="327"
+            height="32"
+            fill="none"
+          >
+            <path
+              d="m37.14 31.31 16.247-13.188-3.258-3.258-10.223 8.296c-.443.346-.939-.05-.641-.543l4.395-6.765c2.47-3.804 1.481-7.655-1.037-9.78-2.618-2.221-6.964-2.518-10.719 1.236L17.73 21.434c-1.53 1.48-3.309 1.332-4.297.347-.74-.79-.988-2.125-.1-3.606L21.09 4.836 16.248.046 0 13.235l3.259 3.26 10.223-8.297c.442-.347.938.05.64.542l-4.345 6.766c-2.271 3.507-1.58 7.112.542 9.234 2.568 2.668 7.211 3.26 11.21-.74L35.656 9.923c1.381-1.382 3.014-1.382 4.048-.592.939.74 1.286 2.22.347 3.854L32.297 26.52l4.84 4.789h.002ZM93.987 16.79v14.57h5.236V15.16c0-5.926-4.938-9.089-9.88-9.089-3.803 0-7.31 1.63-8.99 5.728-.197.542-.839.397-.839-.149V6.664h-3.903V31.36h5.235V19.752c0-6.323 3.705-9.04 7.162-9.04 3.061 0 5.976 2.076 5.976 6.075l.004.004ZM123.964 16.741h-13.928c.889-4.296 4.297-6.471 7.655-6.471 3.11 0 6.124 1.877 6.914 5.728.099.442-.198.74-.641.74v.003Zm-13.336 3.95h19.262c.05-.641.099-1.236.099-1.878 0-7.456-4.789-12.74-12.447-12.74-8.444 0-12.989 6.566-12.989 13.087s4.446 12.791 12.89 12.791c4.743 0 9.78-2.37 11.558-6.964l-3.705-1.236c-.397-.149-.691 0-.889.397-1.236 2.37-3.804 3.507-6.518 3.507-3.358 0-6.914-1.828-7.853-6.224-.099-.443.149-.74.592-.74ZM144.608 21.235c.199-.492.691-.492.889 0 .592 1.58 1.432 2.568 2.668 4.197l4.495 5.926h6.372l-10.223-12.642 9.482-12.05h-6.074l-4.049 5.087c-1.286 1.629-2.076 2.617-2.667 4.197-.199.542-.691.542-.889 0-.592-1.58-1.332-2.568-2.668-4.197l-4.048-5.087h-6.075l9.482 12.05-10.222 12.642h6.372l4.495-5.926c1.285-1.629 2.075-2.617 2.667-4.197h-.007ZM174.093 31.26h6.372v-4.938h-7.704V11.654c0-.443.248-.691.691-.691h7.013V6.666h-9.185c-.542 0-.691-.542-.149-.79 2.321-1.087 3.061-3.06 3.061-5.876h-5.037c0 3.556-.641 6.666-3.95 6.666h-2.026l-2.667 3.457c-.397.543-.149.84.397.84h6.616v12.94c0 4.742 1.828 7.36 6.568 7.36v-.003ZM189.356 23.755l-4.099.938c1.187 4.888 6.766 7.212 12.199 7.212 5.778 0 11.36-2.618 11.36-7.704 0-9.631-17.335-5.678-17.335-10.67 0-1.926 2.717-3.159 5.632-3.159 2.667 0 5.433 1.038 6.273 3.457.149.443.492.641.889.493l3.903-1.187c-1.332-4.987-6.223-7.063-11.31-7.063-5.086 0-10.619 2.519-10.619 7.556 0 9.482 17.335 5.777 17.335 10.864 0 1.976-2.915 3.11-6.075 3.11-2.964 0-6.174-1.038-7.261-3.408-.198-.396-.492-.542-.889-.443l-.003.004ZM232.669 16.741h-13.928c.889-4.296 4.297-6.471 7.655-6.471 3.11 0 6.124 1.877 6.914 5.728.099.442-.198.74-.641.74v.003Zm-13.336 3.95h19.262c.05-.641.099-1.236.099-1.878 0-7.456-4.789-12.74-12.447-12.74-8.444 0-12.989 6.566-12.989 13.087s4.445 12.791 12.89 12.791c4.743 0 9.78-2.37 11.558-6.964l-3.705-1.236c-.397-.149-.691 0-.889.397-1.236 2.37-3.804 3.507-6.518 3.507-3.358 0-6.914-1.828-7.853-6.224-.099-.443.149-.74.592-.74ZM262.448 16.79v14.57h5.236V15.16c0-5.926-4.938-9.089-9.879-9.089-3.805 0-7.311 1.63-8.99 5.728-.199.542-.84.397-.84-.149V6.664h-3.9V31.36h5.235V19.752c0-6.323 3.706-9.04 7.163-9.04 3.06 0 5.975 2.076 5.975 6.075v.004ZM277.662 23.755l-4.099.938c1.187 4.888 6.766 7.212 12.199 7.212 5.778 0 11.36-2.618 11.36-7.704 0-9.631-17.335-5.678-17.335-10.67 0-1.926 2.717-3.159 5.632-3.159 2.667 0 5.433 1.038 6.273 3.457.148.443.492.641.889.493l3.9-1.187c-1.332-4.987-6.224-7.063-11.31-7.063-5.087 0-10.62 2.519-10.62 7.556 0 9.482 17.336 5.777 17.336 10.864 0 1.976-2.915 3.11-6.075 3.11-2.965 0-6.174-1.038-7.261-3.408-.199-.396-.493-.542-.889-.443v.004ZM320.975 16.741h-13.928c.889-4.296 4.297-6.471 7.655-6.471 3.11 0 6.124 1.877 6.914 5.728.099.442-.198.74-.641.74v.003Zm-13.336 3.95h19.262c.049-.641.099-1.236.099-1.878 0-7.456-4.789-12.74-12.447-12.74-8.445 0-12.989 6.566-12.989 13.087s4.445 12.791 12.89 12.791c4.743 0 9.78-2.37 11.558-6.964l-3.705-1.236c-.397-.149-.691 0-.889.397-1.236 2.37-3.804 3.507-6.518 3.507-3.358 0-6.914-1.828-7.853-6.224-.099-.443.149-.74.592-.74Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script_0.js"></script>
+  </body>
+</html>
